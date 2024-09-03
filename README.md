@@ -1,2 +1,3 @@
-# geno-safaris-website
-# geno-safaris-website
+# Geno Safaris Website
+
+The official website for Geno Safaris.
