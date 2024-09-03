@@ -4,7 +4,7 @@
   "description": "The official website for Geno Safaris. ",
   "main": "server.js",
   "scripts": {
-     "server": "nodemon backend/server.js",
+     "server": "nodemon server/server.js",
     "client": "cd client && npm run dev",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
