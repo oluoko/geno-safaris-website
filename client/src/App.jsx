@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomeScreen from "./Screens/HomeScreen.jsx/HomeScreen";
 import Checkout from "./Screens/Checkout";
@@ -8,14 +8,17 @@ import ProfileScreen from "./Screens/ProfileScreen";
 
 const App = () => {
   return (
-    <div className="w-full h-screen grid md:flex grid-col justify-center md:justify-around items-center shadow-lg border-2 rounded-xl bg-gray-500">
-      <Routes>
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/checkout/:id" element={<Checkout />} />
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/signup" element={<RegisterScreen />} />
-      </Routes>
-    </div>
+    <Router>
+      <div className="w-full h-screen grid md:flex grid-col justify-center md:justify-around items-center shadow-lg border-2 rounded-xl bg-gray-500">
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/checkout/:id" element={<Checkout />} />
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/signup" element={<RegisterScreen />} />
+          <Route path="/profile" element={<ProfileScreen />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
