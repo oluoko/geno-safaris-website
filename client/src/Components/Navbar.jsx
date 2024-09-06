@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { LiaTimesSolid } from "react-icons/lia";
 import { IoMenu, IoPerson } from "react-icons/io5";
 import logo from "../assets/images/logo/logo1.png";
 import profilePic from "../assets/images/userProfile.png";
+import { ScreenSizeContext } from "./ScreenSizeContext";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const screenSize = useContext(ScreenSizeContext);
   return (
     <>
       <nav
