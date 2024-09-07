@@ -11,7 +11,7 @@ import LoginScreen from "./Screens/LoginScreen";
 import RegisterScreen from "./Screens/RegisterScreen";
 import ProfileScreen from "./Screens/ProfileScreen";
 
-import AdminDashboard from "./Screens/AdminDashboard";
+import AdminDashboard from "./Screens/AdminDashboard/AdminDashboard";
 
 import { ScreenSizeProvider } from "./Components/ScreenSizeContext";
 
