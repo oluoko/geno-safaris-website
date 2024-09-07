@@ -14,7 +14,7 @@ const HomeScreen = () => {
   //   setScreenSize("big");
   // }
   return (
-    <div className="main-screen w-full mt-44 md:mt-58 flex flex-col justify-center items-center ">
+    <div className="main-screen w-full mt-24 flex flex-col justify-center items-center ">
       <Navbar />
       <Home />
       <About />

@@ -7,3 +7,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --orange: rgb(255, 111, 0);
+}
+
+.screen {
+  height: 85vh;
+  margin-top: 10px;
+}
+
+*::-webkit-scrollbar {
+  width: 9px;
+}
+
+.dashboard-nav::-webkit-scrollbar,
+.blog-container-container::-webkit-scrollbar,
+.categories-bar::-webkit-scrollbar,
+.employees-list-container::-webkit-scrollbar,
+.user-list-container::-webkit-scrollbar,
+.blog-list-container::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background: var(--orange);
+}
+
+*::-webkit-scrollbar-thumb {
+  /* background: #383838; */
+  background: black;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}

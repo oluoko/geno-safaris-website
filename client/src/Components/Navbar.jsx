@@ -57,7 +57,7 @@ const Navbar = () => {
             <Link to="/signup" className="">
               <img
                 src={profilePic}
-                className="w-10 rounded-full border hover:border-orange-500"
+                className="w-10 rounded-full border hover:border-orange-500 hover:border-4 "
                 alt=""
               />
             </Link>

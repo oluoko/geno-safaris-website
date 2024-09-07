@@ -3,8 +3,10 @@ import Footer from "../../Components/Footer";
 
 const Contact = () => {
   return (
-    <div id="contact" className="screen w-11/12 md:w-5/6  relative ">
-      Contact
+    <div className="screen flex flex-col justify-center items-center">
+      <div id="contact" className="w-11/12 h-2/3 md:w-5/6  ">
+        Contact
+      </div>
       <Footer />
     </div>
   );
