@@ -17,7 +17,13 @@ const AdminDashboard = () => {
     window.scroll({ top: 0 });
     document.querySelector("html").style.scrollBehavior = "";
   }, [location.pathname]); // triggered on route change
-  return <ThemeProvider>AdminDashboard</ThemeProvider>;
+  return (
+    <ThemeProvider>
+      <Routes>
+        <Route exact path="/" element={<Dashboard />} />
+      </Routes>
+    </ThemeProvider>
+  );
 };
 
 export default AdminDashboard;
